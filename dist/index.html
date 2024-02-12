@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class=" bg-gradient-to-br from-blue-400 to-purple-600 flex justify-center  items-center  h-screen " >
+    
+    <div class="container bg-white w-max max-w-md px-7 py-8 rounded-lg shadow-lg " >
+
+        <h2 class="title text-4xl  py-5  font-semibold   text-purple-600 mb-11 before:content-[ h-1 w-7  ]">Registration</h2>
+        <form action="#" class="grid grid-cols-2 gap-4">
+            <!-- <div class="user-details flex flex-col  "> -->
+
+                <div class="input-box flex flex-col ">
+                   <label for="full name" class="text-lg text-gray-800 font-semibold mb-1">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name" required class="input-field">
+                </div>
+
+                <div class="input-box  flex flex-col ">
+                    <span class="details text-lg text-gray-800 font-semibold mb-1">User Name</span>
+                    <input type="text" placeholder="Enter your User name" required>
+                </div>
+
+                <div class="input-box  flex flex-col ">
+                    <span class="details text-lg text-gray-800 font-semibold mb-1">E-mail</span>
+                    <input type="text" placeholder="Enter your E-mail" required>
+                </div>
+
+                <div class="input-box  flex flex-col ">
+                    <span class="details text-lg text-gray-800 font-semibold mb-1">Phone Number</span>
+                    <input type="text" placeholder="Enter your Phone number" required>
+                </div>
+
+                <div class="input-box  flex flex-col ">
+                    <span class="details text-lg text-gray-800 font-semibold mb-1">Password</span>
+                    <input type="text" placeholder="Enter your Password" required>
+                </div>
+
+                <div class="input-box  flex flex-col ">
+                    <span class="details text-lg text-gray-800 font-semibold mb-1">Confirm Pasword</span>
+                    <input type="text" placeholder="Confirm Password" required>
+                </div>
+            <!-- </div> -->
+
+            <div class="gender-details col-span-2">
+                <span class="gender-title text-lg text-gray-800 font-semibold mb-1">Gender</span>
+                <div class="category flex items-center space-x-4">
+
+                <label for="male"
+                    class="flex items-center">
+                    <input type="radio" id="male"
+                    name="gender" value="male"
+                    class="mr-2">
+                    <span class="text-lg text-black-800">Male</span>
+                </label>
+
+                <label for="male"
+                class="flex items-center text-pretty">
+                <input type="radio" id="male"
+                name="gender" value="male"
+                class="mr-2">
+                <span class="text-lg text-gray-800"> Female</span>
+            </label>
+
+            <label for="female"
+            class="flex items-center">
+            <input type="radio" id="other"
+            name="gender"
+            value="other"
+            class="mr-2">
+            <span class="text-lg text-gray-800"> Prefer not to say</span>
+        </label>
+                </div>
+            </div>
+
+            <div class=" col-span-2">
+               <button type="submit" class="w-full bg-purple-600 text-white font-semibold py-3rounded-md text-lg hover:bg-purple-700 transition-colors rounded-lg py-2">Register </button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
